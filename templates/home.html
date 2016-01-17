@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ word }}</title>
+</head>
+
+<body>
+<h1>Thesaurus for {{ word }}</h1>
+<ul id="synonyms">
+    {% for item in synonyms %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
