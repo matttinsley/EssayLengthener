@@ -2,6 +2,7 @@ import redis
 
 r_server = redis.Redis("localhost")
 
+
 with open("mobythes.aur") as f:
     for line in f:
         results = line.split(",")
